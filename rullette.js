@@ -50,7 +50,7 @@ function drawRouletteWheel() {
     var insideRadius = 125;
 
     ctx = canvas.getContext("2d");
-    ctx.clearRect(0, 0, 500, 500);
+    ctx.clearRect(0, 0, 800, 800);
 
     ctx.strokeStyle = "black";
     ctx.lineWidth = 2;
@@ -187,7 +187,7 @@ function question(text) {
 
        
     A.addEventListener("click", function () {
-      A.textContent = "Respuesta correcta. Felicitaciones!";
+      A.textContent = "Correcto. Felicitaciones!";
     });
 
     B.addEventListener("click", function () {
@@ -231,7 +231,7 @@ function question(text) {
     });
 
     B.addEventListener("click", function () {
-      B.textContent = "Respuesta correcta. Felicitaciones!";
+      B.textContent = "Correcto. Felicitaciones!";
     });
 
 
