@@ -2,6 +2,7 @@ var options = [
   "BOLSITA",
   "Medioambiente",
   "Descomposición",
+  "3R"
 ];
 
 
@@ -204,7 +205,7 @@ function question(text) {
       contenedor.removeChild(contenedor.firstChild);
     }
     let mensaje = document.createTextNode("p")
-    mensaje.textContent = "¿Cuándo tiempo tarda de descomponerse una BOLSA DE PLÁSTICO?"
+    mensaje.textContent = "¿Cuándo tiempo tarda en descomponerse una BOLSA DE PLÁSTICO?"
     contenedor.appendChild(mensaje);
 
     var A = document.querySelector("#opcionA");
@@ -236,6 +237,49 @@ function question(text) {
 
 
   }
+  if (text == options[3]) {
+
+
+    let contenedor = document.querySelector("#Pregunta")
+    while (contenedor.hasChildNodes()) {
+      contenedor.removeChild(contenedor.firstChild);
+    }
+    let mensaje = document.createTextNode("p")
+    mensaje.textContent = "Qué significan las 3R? Reducir, reutilizar y.."
+    contenedor.appendChild(mensaje);
+  
+    var A = document.querySelector("#opcionA");
+    var B = document.querySelector("#opcionB");
+  
+    while (A.hasChildNodes()) {
+      A.removeChild(A.firstChild);
+    }
+    while (B.hasChildNodes()) {
+      B.removeChild(B.firstChild);
+    }
+  
+    let mensajeA = document.createTextNode("p")
+    mensajeA.textContent = "Reparar"
+    A.appendChild(mensajeA);
+    
+    let mensajeB = document.createTextNode("p")
+    mensajeB.textContent = "Reciclar"
+    B.appendChild(mensajeB);
+  
+        
+    A.addEventListener("click", function () {
+      A.textContent = "Incorrecta";
+    });
+  
+    B.addEventListener("click", function () {
+      B.textContent = "Correcto!";
+    });
+  
+  
+  }
 }
+
+
+
 drawRouletteWheel();
 
