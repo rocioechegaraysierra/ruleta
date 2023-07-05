@@ -187,11 +187,11 @@ function question(text) {
 
        
     A.addEventListener("click", function () {
-      A.textContent = "Correcto. Felicitaciones!";
+      A.textContent = "Correcto!";
     });
 
     B.addEventListener("click", function () {
-      B.textContent = "Respuesta incorrecta";
+      B.textContent = "Incorrecto";
     });
 
   }
@@ -227,11 +227,11 @@ function question(text) {
 
         
     A.addEventListener("click", function () {
-      A.textContent = "Respuesta incorrecta";
+      A.textContent = "Incorrecta";
     });
 
     B.addEventListener("click", function () {
-      B.textContent = "Correcto. Felicitaciones!";
+      B.textContent = "Correcto!";
     });
 
 
