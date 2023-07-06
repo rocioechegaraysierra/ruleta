@@ -205,7 +205,7 @@ function question(text) {
       contenedor.removeChild(contenedor.firstChild);
     }
     let mensaje = document.createTextNode("p")
-    mensaje.textContent = "¿Cuándo tiempo tarda en descomponerse una BOLSA DE PLÁSTICO?"
+    mensaje.textContent = "¿Cuánto tiempo tarda en descomponerse una BOLSA DE PLÁSTICO?"
     contenedor.appendChild(mensaje);
 
     var A = document.querySelector("#opcionA");
@@ -245,7 +245,7 @@ function question(text) {
       contenedor.removeChild(contenedor.firstChild);
     }
     let mensaje = document.createTextNode("p")
-    mensaje.textContent = "Qué significan las 3R? Reducir, reutilizar y.."
+    mensaje.textContent = "¿Qué significan las 3R? Reducir, reutilizar y.."
     contenedor.appendChild(mensaje);
   
     var A = document.querySelector("#opcionA");
